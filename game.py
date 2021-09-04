@@ -126,13 +126,13 @@ def main():
             game = Tetris(row, column, shape)
             grid_to_print = game.load_piece()
         elif command == 'rotate':
-            grid_to_print = game.rotate_piece()  # end='\n\n'
+            grid_to_print = game.rotate_piece()
         elif command == 'right':
-            grid_to_print = game.move_piece_right()  # end='\n\n'
+            grid_to_print = game.move_piece_right()
         elif command == 'left':
-            grid_to_print = game.move_piece_left()  # end='\n\n'
+            grid_to_print = game.move_piece_left()
         elif command == 'down' or command == '':
-            grid_to_print = game.go_down()  # end='\n\n'
+            grid_to_print = game.go_down()
         elif command == 'break':
             grid_to_print = game.break_()
         elif command == 'exit':
